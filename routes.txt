@@ -1,0 +1,30 @@
+user===>
+signin
+signup
+verify token 
+firebase intregration
+category
+get catgegory
+user profile
+update user profile
+add blog 
+update blog 
+get blog
+like 
+comment
+view 
+save
+saerrh
+
+admin===>
+signin
+add category
+update category
+delete category
+get category
+add plan
+update plan
+delete plan
+get plan
+all roles 
+all permissions

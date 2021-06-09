@@ -1,0 +1,69 @@
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var advertisement = new Schema({
+    CampaignName:{
+        type:String,
+        required:true
+    },
+  title:{
+      type:String,
+      required:true
+  },
+  image:{
+    type:String,
+    required:true
+  },
+  image:{
+      type:String,
+      required:true
+  },
+  blog_id:{
+      type:String,
+      required:true
+  },
+  user_id:{
+    type:String,
+    required:true
+  },
+  tags:[{
+    type:String,
+    required:true
+}],
+  category:[{
+    type:String,
+    required:true
+}],
+  amount:{
+          type: Number,
+          required:true,
+          min:100
+    },
+  status:{
+          type:Number,
+    },
+    is_paid:{
+          type: Boolean
+        },
+    payment_id:{
+        type:String
+    },
+    is_start:{
+        type:String
+    },
+    is_end:{
+        type:String,
+    },
+    start_date:{
+        type:Date,
+        required:true
+    },
+    end_date:{
+        type:Date,
+        required:true
+    },
+    disable:{
+        type:Boolean,
+        default:false
+    }
+},{timestamps:true});
+module.exports = mongoose.model('Advertisement', advertisement);
